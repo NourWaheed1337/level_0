@@ -46,11 +46,18 @@
             this.lblRooms = new System.Windows.Forms.Label();
             this.lblWorkers = new System.Windows.Forms.Label();
             this.lbPatients = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label12 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userControl51 = new WindowsFormsApp1.UserControl5();
+            this.userControl41 = new WindowsFormsApp1.UserControl4();
+            this.userControl31 = new WindowsFormsApp1.UserControl3();
+            this.userControl21 = new WindowsFormsApp1.UserControl2();
+            this.userControl11 = new WindowsFormsApp1.UserControl1();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,6 +75,7 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "Reception";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -79,17 +87,19 @@
             this.button5.TabIndex = 17;
             this.button5.Text = "Patients";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(24, 547);
+            this.button4.Location = new System.Drawing.Point(20, 547);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(188, 63);
             this.button4.TabIndex = 16;
             this.button4.Text = "Rooms";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -101,6 +111,7 @@
             this.button3.TabIndex = 15;
             this.button3.Text = "Nurses";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -119,7 +130,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(196, 49);
+            this.label2.Location = new System.Drawing.Point(190, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(329, 29);
             this.label2.TabIndex = 13;
@@ -165,7 +176,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(951, 141);
+            this.label3.Location = new System.Drawing.Point(721, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 32);
             this.label3.TabIndex = 1;
@@ -177,7 +188,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1139, 141);
+            this.label4.Location = new System.Drawing.Point(1009, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(228, 32);
             this.label4.TabIndex = 1;
@@ -199,7 +210,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1429, 141);
+            this.label6.Location = new System.Drawing.Point(1349, 139);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 32);
             this.label6.TabIndex = 1;
@@ -211,7 +222,7 @@
             this.lblDoctors.AutoSize = true;
             this.lblDoctors.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.lblDoctors.ForeColor = System.Drawing.Color.White;
-            this.lblDoctors.Location = new System.Drawing.Point(986, 183);
+            this.lblDoctors.Location = new System.Drawing.Point(756, 183);
             this.lblDoctors.Name = "lblDoctors";
             this.lblDoctors.Size = new System.Drawing.Size(83, 32);
             this.lblDoctors.TabIndex = 2;
@@ -223,7 +234,7 @@
             this.lblRooms.AutoSize = true;
             this.lblRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.lblRooms.ForeColor = System.Drawing.Color.White;
-            this.lblRooms.Location = new System.Drawing.Point(1199, 183);
+            this.lblRooms.Location = new System.Drawing.Point(1069, 183);
             this.lblRooms.Name = "lblRooms";
             this.lblRooms.Size = new System.Drawing.Size(83, 32);
             this.lblRooms.TabIndex = 25;
@@ -245,12 +256,40 @@
             this.lbPatients.AutoSize = true;
             this.lbPatients.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.lbPatients.ForeColor = System.Drawing.Color.White;
-            this.lbPatients.Location = new System.Drawing.Point(1464, 183);
+            this.lbPatients.Location = new System.Drawing.Point(1384, 181);
             this.lbPatients.Name = "lbPatients";
             this.lbPatients.Size = new System.Drawing.Size(83, 32);
             this.lbPatients.TabIndex = 25;
             this.lbPatients.Text = "value";
             this.lbPatients.Click += new System.EventHandler(this.lbPatients_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(159, 1026);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(116, 20);
+            this.linkLabel1.TabIndex = 51;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Github Source";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 1026);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(132, 20);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "Software @ v0.2";
             // 
             // pictureBox4
             // 
@@ -264,7 +303,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.hospitalisation;
-            this.pictureBox5.Location = new System.Drawing.Point(1397, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(1317, 10);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(242, 108);
             this.pictureBox5.TabIndex = 0;
@@ -274,7 +313,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.exam_room;
-            this.pictureBox3.Location = new System.Drawing.Point(1162, 13);
+            this.pictureBox3.Location = new System.Drawing.Point(1032, 13);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(178, 108);
             this.pictureBox3.TabIndex = 0;
@@ -283,7 +322,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.medical_team_1_;
-            this.pictureBox2.Location = new System.Drawing.Point(943, 13);
+            this.pictureBox2.Location = new System.Drawing.Point(713, 13);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(152, 108);
             this.pictureBox2.TabIndex = 0;
@@ -293,18 +332,60 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.hospital_3_;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 101);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 103);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(913, 319);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            // 
+            // userControl51
+            // 
+            this.userControl51.Location = new System.Drawing.Point(524, 243);
+            this.userControl51.Name = "userControl51";
+            this.userControl51.Size = new System.Drawing.Size(1377, 785);
+            this.userControl51.TabIndex = 57;
+            // 
+            // userControl41
+            // 
+            this.userControl41.Location = new System.Drawing.Point(524, 243);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1377, 785);
+            this.userControl41.TabIndex = 56;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Location = new System.Drawing.Point(524, 243);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1377, 785);
+            this.userControl31.TabIndex = 55;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(524, 243);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(1377, 785);
+            this.userControl21.TabIndex = 54;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(524, 243);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1377, 785);
+            this.userControl11.TabIndex = 53;
             // 
             // form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1924, 906);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.userControl51);
+            this.Controls.Add(this.userControl41);
+            this.Controls.Add(this.userControl31);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblWorkers);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox4);
@@ -365,5 +446,12 @@
         private System.Windows.Forms.Label lblRooms;
         private System.Windows.Forms.Label lblWorkers;
         private System.Windows.Forms.Label lbPatients;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label12;
+        private UserControl1 userControl11;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
+        private UserControl4 userControl41;
+        private UserControl5 userControl51;
     }
 }

@@ -2,32 +2,43 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Org.BouncyCastle.Asn1.Crmf;
 
 namespace WindowsFormsApp1
 {
     public partial class form_main : Form
     {
-            int doctors;
-            int rooms;
-            int workers;
-            int patients;
+        int doctors;
+        int rooms;
+        int workers;
+        int patients;
+
         public form_main()
         {
+
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
             this.TopMost = true;
             LoadHospitalData();
+
         }
 
         private void form_main_Load(object sender, EventArgs e)
         {
+            userControl11.Hide();
+            userControl21.Hide();
+            userControl31.Hide();
+            userControl41.Hide();
+            userControl51.Hide();
 
         }
 
@@ -148,7 +159,85 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            userControl21.Hide();
+            userControl31.Hide();
+            userControl41.Hide();
+            userControl51.Hide();
+            userControl11.Show();
+        }
 
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            userControl11.Hide();
+            userControl31.Hide();
+            userControl41.Hide();
+            userControl51.Hide();
+            userControl21.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            userControl11.Hide();
+            userControl21.Hide();
+            userControl31.Hide();
+            userControl51.Hide();
+            userControl41.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            userControl11.Hide();
+            userControl21.Hide();
+            userControl41.Hide();
+            userControl51.Hide();
+            userControl31.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            userControl11.Hide();
+            userControl21.Hide();
+            userControl31.Hide();
+            userControl41.Hide();
+            userControl51.Show();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://github.com/NourWaheed1337/level_0",
+                UseShellExecute = true
+            });
+            Close();
         }
     }
 
