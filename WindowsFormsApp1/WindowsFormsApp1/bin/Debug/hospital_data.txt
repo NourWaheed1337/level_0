@@ -1,4 +1,0 @@
-Doctors=10
-Rooms=20
-Workers=30
-Patients=50

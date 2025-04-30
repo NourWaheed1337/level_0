@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\windowsformsapp3\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\windowsformsapp3\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|c:\\users\\nourw\\downloads\\p3\\windowsformsapp3\\windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA04D1D5-BE16-46D4-827E-F08BF2F35DC9}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\Form1.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\Form1.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAnwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T13:09:25.217Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControl1.cs",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\UserControl1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\UserControl1.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\UserControl1.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\UserControl1.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T13:10:57.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserControl1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\UserControl1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\UserControl1.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\UserControl1.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\UserControl1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T13:07:38.777Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\Form1.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p3\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T13:07:05.816Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
