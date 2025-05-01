@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using WindowsFormsApp3.repo;
 
 namespace WindowsFormsApp3
 {
@@ -25,6 +27,7 @@ namespace WindowsFormsApp3
             path.AddArc(bounds.X, bounds.Bottom - diameter, diameter, diameter, 90, 90);
             path.CloseFigure();
             panel.Region = new Region(path);
+
         }
 
         public UserControl1()
@@ -40,7 +43,37 @@ namespace WindowsFormsApp3
                 number = rnd.Next(0, 10);
                 chart1.Series["Patients"].Points.AddXY(i, number);
             }
+            ReadClients();
+
         }
+        private void ReadClients()
+        {
+            DataTable dataTable = new DataTable();
+            dataTable.Columns.Add("ID");
+            dataTable.Columns.Add("Name");
+            dataTable.Columns.Add("Email");
+            dataTable.Columns.Add("Phone");
+            dataTable.Columns.Add("Date");
+            dataTable.Columns.Add("gender");
+            dataTable.Columns.Add("weight");
+            var repo = new ClientRepo();
+            var clients = repo.GetClients();
+            foreach (var client in clients)
+            {
+                var row = dataTable.NewRow();
+                row["ID"] = client.id;
+                row["Name"] = client.firstName + " " + client.lastName;
+                row["Email"] = client.email;
+                row["Phone"] = client.phone;
+                row["Date"] = client.createdAt;
+                row["gender"] = client.gender;
+                row["weight"] = client.weight;
+                dataTable.Rows.Add(row);
+            }
+            this.clientsTable.DataSource = dataTable;
+
+        }
+
         private void UserControl1_Load(object sender, EventArgs e)
         {
             MakeRoundedPanel(panel1, 15);
@@ -53,6 +86,7 @@ namespace WindowsFormsApp3
             MakeRoundedPanel(panel8, 10);
             MakeRoundedPanel(panel9, 10);
             MakeRoundedPanel(panel10, 10);
+            MakeRoundedPanel(panel11, 10);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -186,6 +220,21 @@ namespace WindowsFormsApp3
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
