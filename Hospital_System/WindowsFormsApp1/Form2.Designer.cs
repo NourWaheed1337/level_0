@@ -40,7 +40,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.userControl51 = new WindowsFormsApp1.UserControl5();
+            this.userControl41 = new WindowsFormsApp1.UserControl4();
+            this.userControl31 = new WindowsFormsApp1.UserControl3();
             this.userControl21 = new WindowsFormsApp1.UserControl2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +86,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(329, 837);
+            this.panel1.Size = new System.Drawing.Size(329, 1055);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -151,6 +153,7 @@
             this.button1.Text = "    Dashboard";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -167,6 +170,7 @@
             this.button3.Text = "    Operations";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -183,6 +187,7 @@
             this.button5.Text = "    Pations";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -215,31 +220,51 @@
             this.button2.Text = "    Doctors";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel2
+            // userControl51
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(329, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1510, 100);
-            this.panel2.TabIndex = 7;
+            this.userControl51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.userControl51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl51.Location = new System.Drawing.Point(329, 0);
+            this.userControl51.Name = "userControl51";
+            this.userControl51.Size = new System.Drawing.Size(1595, 1055);
+            this.userControl51.TabIndex = 11;
+            // 
+            // userControl41
+            // 
+            this.userControl41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl41.Location = new System.Drawing.Point(329, 0);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1595, 1055);
+            this.userControl41.TabIndex = 10;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl31.Location = new System.Drawing.Point(329, 0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1595, 1055);
+            this.userControl31.TabIndex = 9;
             // 
             // userControl21
             // 
+            this.userControl21.AutoScroll = true;
             this.userControl21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl21.Location = new System.Drawing.Point(329, 100);
+            this.userControl21.Location = new System.Drawing.Point(329, 0);
             this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(1510, 737);
+            this.userControl21.Size = new System.Drawing.Size(1595, 1055);
             this.userControl21.TabIndex = 8;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1839, 837);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.userControl51);
+            this.Controls.Add(this.userControl41);
+            this.Controls.Add(this.userControl31);
             this.Controls.Add(this.userControl21);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
@@ -263,7 +288,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel2;
         private UserControl2 userControl21;
+        private UserControl3 userControl31;
+        private UserControl4 userControl41;
+        private UserControl5 userControl51;
     }
 }

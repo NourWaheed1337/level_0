@@ -15,6 +15,12 @@ namespace WindowsFormsApp1
         public Form2()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.TopMost = true;
+            userControl31.Hide();
+            userControl41.Hide();
+            userControl51.Hide();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -42,6 +48,39 @@ namespace WindowsFormsApp1
         private void button8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            userControl21.Hide();
+            userControl31.Show();
+            userControl41.Hide();
+            userControl51.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userControl31.Hide();
+            userControl21.Show();
+            userControl41.Hide();
+            userControl51.Hide();
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            userControl31.Hide();
+            userControl21.Hide();
+            userControl41.Show();
+            userControl51.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            userControl31.Hide();
+            userControl21.Hide();
+            userControl41.Hide();
+            userControl51.Show();
         }
     }
 }

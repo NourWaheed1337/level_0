@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\nourw\\downloads\\p4\\hospital_system\\windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\nourw\\downloads\\p4\\hospital_system\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBEFE57E-C21C-4C34-AA3A-29E4CC323F15}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -42,17 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\Form1.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vw4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T06:27:26.547Z",
               "IsPinned": true,
@@ -60,45 +84,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserControl2.cs",
-              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl2.cs",
-              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\UserControl2.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T10:55:13.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserControl2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl2.cs",
-              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\UserControl2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T10:49:23.7Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\Form2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form2.cs",
               "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\Form2.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form2.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAMwCUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwFEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T10:16:08.75Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "UserControl3.cs",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl3.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl3.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl3.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl3.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAqwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:53:08.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\Form2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form2.cs",
@@ -110,7 +123,106 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserControl2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl2.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:49:23.7Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControl5.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl5.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl5.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl5.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T15:45:40.532Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControl4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl4.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl4.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl4.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T14:32:53.827Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "UserControl4.cs",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl4.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl4.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl4.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl4.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAWwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T14:35:24.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControl3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl3.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl3.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl3.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:43:36.924Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserControl5.cs",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl5.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl5.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl5.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl5.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAArwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T15:50:54.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserControl1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl1.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl1.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T08:03:02.886Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserControl2.cs",
+              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl2.cs",
+              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl2.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\UserControl2.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:55:13.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
@@ -122,28 +234,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "UserControl1.cs",
               "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl1.cs",
               "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl1.cs",
               "RelativeToolTip": "WindowsFormsApp1\\UserControl1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T08:41:18.119Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserControl1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl1.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\UserControl1.cs",
-              "ToolTip": "C:\\Users\\Nourw\\Downloads\\p4\\Hospital_System\\WindowsFormsApp1\\UserControl1.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\UserControl1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:03:02.886Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -32,6 +32,9 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,6 +65,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -73,6 +78,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.chart1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel7);
@@ -82,9 +89,43 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1857, 884);
+            this.panel1.Size = new System.Drawing.Size(1857, 1222);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.dataGridView1);
+            this.panel12.Controls.Add(this.label16);
+            this.panel12.Location = new System.Drawing.Point(29, 752);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1676, 301);
+            this.panel12.TabIndex = 16;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(143, 76);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1440, 193);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(31, 25);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(220, 38);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "INFO STUFF";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // chart1
             // 
@@ -92,11 +133,11 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(46, 237);
+            this.chart1.Location = new System.Drawing.Point(29, 221);
             this.chart1.Name = "chart1";
             series1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
             series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(231)))));
             series1.Legend = "Legend1";
             series1.Name = "Patients";
             this.chart1.Series.Add(series1);
@@ -111,7 +152,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(46, 41);
+            this.panel2.Location = new System.Drawing.Point(29, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 158);
             this.panel2.TabIndex = 10;
@@ -156,10 +197,11 @@
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.label8);
-            this.panel7.Location = new System.Drawing.Point(1333, 41);
+            this.panel7.Location = new System.Drawing.Point(1316, 25);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(381, 158);
             this.panel7.TabIndex = 13;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // panel8
             // 
@@ -170,6 +212,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(140, 100);
             this.panel8.TabIndex = 3;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // label7
             // 
@@ -180,6 +223,7 @@
             this.label7.Size = new System.Drawing.Size(98, 29);
             this.label7.TabIndex = 2;
             this.label7.Text = "In come";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -190,6 +234,7 @@
             this.label8.Size = new System.Drawing.Size(135, 46);
             this.label8.TabIndex = 1;
             this.label8.Text = "$5460";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel5
             // 
@@ -197,10 +242,11 @@
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(462, 41);
+            this.panel5.Location = new System.Drawing.Point(445, 25);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(381, 158);
             this.panel5.TabIndex = 11;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel4
             // 
@@ -211,6 +257,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(140, 100);
             this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label3
             // 
@@ -221,6 +268,7 @@
             this.label3.Size = new System.Drawing.Size(130, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Our Doctor";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -230,7 +278,8 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 46);
             this.label4.TabIndex = 1;
-            this.label4.Text = "23";
+            this.label4.Text = "30";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel9
             // 
@@ -238,10 +287,11 @@
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.label5);
             this.panel9.Controls.Add(this.label6);
-            this.panel9.Location = new System.Drawing.Point(895, 41);
+            this.panel9.Location = new System.Drawing.Point(878, 25);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(381, 158);
             this.panel9.TabIndex = 12;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // panel6
             // 
@@ -252,6 +302,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(140, 100);
             this.panel6.TabIndex = 3;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label5
             // 
@@ -262,6 +313,7 @@
             this.label5.Size = new System.Drawing.Size(132, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "Operations";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -272,10 +324,11 @@
             this.label6.Size = new System.Drawing.Size(66, 46);
             this.label6.TabIndex = 1;
             this.label6.Text = "14";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(231)))));
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.label15);
             this.panel10.Controls.Add(this.button3);
@@ -287,10 +340,11 @@
             this.panel10.Controls.Add(this.label11);
             this.panel10.Controls.Add(this.label10);
             this.panel10.Controls.Add(this.label9);
-            this.panel10.Location = new System.Drawing.Point(1082, 237);
+            this.panel10.Location = new System.Drawing.Point(1065, 221);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(632, 497);
             this.panel10.TabIndex = 14;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // panel11
             // 
@@ -300,6 +354,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(626, 242);
             this.panel11.TabIndex = 11;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // label15
             // 
@@ -311,6 +366,7 @@
             this.label15.Size = new System.Drawing.Size(78, 22);
             this.label15.TabIndex = 10;
             this.label15.Text = "Reviews";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // button3
             // 
@@ -322,6 +378,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "1360";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label14
             // 
@@ -333,6 +390,7 @@
             this.label14.Size = new System.Drawing.Size(75, 22);
             this.label14.TabIndex = 8;
             this.label14.Text = "Patients";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // button2
             // 
@@ -344,6 +402,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "2.648";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label13
             // 
@@ -355,6 +414,7 @@
             this.label13.Size = new System.Drawing.Size(100, 22);
             this.label13.TabIndex = 6;
             this.label13.Text = "Experience";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // button1
             // 
@@ -366,6 +426,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "8 Y";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
@@ -377,6 +438,7 @@
             this.label12.Size = new System.Drawing.Size(145, 25);
             this.label12.TabIndex = 4;
             this.label12.Text = "Endocrinologist";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -388,6 +450,7 @@
             this.label11.Size = new System.Drawing.Size(226, 29);
             this.label11.TabIndex = 3;
             this.label11.Text = "Dr. Natasha Morgan";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -399,6 +462,7 @@
             this.label10.Size = new System.Drawing.Size(85, 25);
             this.label10.TabIndex = 1;
             this.label10.Text = "this year";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -410,6 +474,7 @@
             this.label9.Size = new System.Drawing.Size(138, 29);
             this.label9.TabIndex = 0;
             this.label9.Text = "Best Doctor";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // UserControl2
             // 
@@ -417,8 +482,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(1857, 884);
+            this.Size = new System.Drawing.Size(1857, 1222);
             this.panel1.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -466,5 +534,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
