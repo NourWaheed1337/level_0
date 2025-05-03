@@ -79,6 +79,7 @@ namespace WindowsFormsApp1
             MakeRoundedPanel(panel9, 10);
             MakeRoundedPanel(panel10, 10);
             MakeRoundedPanel(panel12, 10);
+            MakeRoundedPanel(panel13, 10);
         }
 
         private void chart1_Click(object sender, EventArgs e) { }
@@ -113,6 +114,11 @@ namespace WindowsFormsApp1
         private void label10_Click(object sender, EventArgs e) { }
         private void label9_Click(object sender, EventArgs e) { }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+
+        private void chart1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
   

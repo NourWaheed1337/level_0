@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
             userControl31.Hide();
             userControl41.Hide();
             userControl51.Hide();
+            userControl61.Hide();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -56,6 +57,7 @@ namespace WindowsFormsApp1
             userControl31.Show();
             userControl41.Hide();
             userControl51.Hide();
+            userControl61.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,6 +66,7 @@ namespace WindowsFormsApp1
             userControl21.Show();
             userControl41.Hide();
             userControl51.Hide();
+            userControl61.Hide();
             
         }
 
@@ -73,6 +76,7 @@ namespace WindowsFormsApp1
             userControl21.Hide();
             userControl41.Show();
             userControl51.Hide();
+            userControl61.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -81,6 +85,16 @@ namespace WindowsFormsApp1
             userControl21.Hide();
             userControl41.Hide();
             userControl51.Show();
+            userControl61.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            userControl31.Hide();
+            userControl21.Hide();
+            userControl41.Hide();
+            userControl51.Hide();
+            userControl61.Show();
         }
     }
 }

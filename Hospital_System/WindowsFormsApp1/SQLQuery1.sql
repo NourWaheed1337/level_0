@@ -1,0 +1,53 @@
+﻿-- Drop the table if it already exists
+DROP TABLE IF EXISTS payment_activity;
+
+-- Create the new payment activity table
+CREATE TABLE payment_activity (
+    payment_id INT NOT NULL PRIMARY KEY IDENTITY,
+    patient_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    amount_paid DECIMAL(10,2) NOT NULL,
+    payment_method VARCHAR(50) NOT NULL,
+    insurance_provider VARCHAR(100),
+    paid_on DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    remarks TEXT
+);
+INSERT INTO payment_activity (patient_name, email, amount_paid, payment_method, insurance_provider, remarks) VALUES
+('Chloe Mills', 'chloe.mills@example.com', 150.00, 'Credit Card', 'Aetna', 'Co-pay for asthma treatment'),
+('Andrea May', 'andrea.may@example.com', 200.00, 'Insurance', 'Blue Cross', 'Covered under hypertension plan'),
+('Peter Harris', 'peter.harris@example.com', 180.00, 'Credit Card', 'UnitedHealthcare', 'Osteoarthritis treatment fee'),
+('Harry Russell', 'harry.russell@example.com', 90.00, 'Debit Card', 'Cigna', 'Migraine consultation'),
+('Frank Hodges', 'frank.hodges@example.com', 240.00, 'Insurance', 'Humana', 'Sleep apnea therapy billing'),
+('Maria Paterson', 'maria.paterson@example.com', 210.00, 'Credit Card', 'Kaiser Permanente', 'Diabetes management fee'),
+('Isaac Moore', 'isaac.moore@example.com', 170.00, 'Debit Card', 'Aetna', 'IBS treatment consultation'),
+('Vivian Ross', 'vivian.ross@example.com', 130.00, 'Insurance', 'Cigna', 'Allergy care'),
+('Steven Black', 'steven.black@example.com', 160.00, 'Credit Card', 'Blue Cross', 'COPD medication charge'),
+('Leah Simmons', 'leah.simmons@example.com', 220.00, 'Insurance', 'UnitedHealthcare', 'RA management billing'),
+('Ethan Lewis', 'ethan.lewis@example.com', 250.00, 'Insurance', 'Humana', 'CKD dialysis support'),
+('Daniel Ortiz', 'daniel.ortiz@example.com', 145.00, 'Credit Card', 'Cigna', 'Chronic back pain care'),
+('Alan Foster', 'alan.foster@example.com', 110.00, 'Debit Card', 'Aetna', 'High cholesterol treatment'),
+('Kate Monroe', 'kate.monroe@example.com', 130.00, 'Credit Card', 'Kaiser Permanente', 'GERD consultation'),
+('Connor Hayes', 'connor.hayes@example.com', 95.00, 'Cash', 'Blue Cross', 'Tonsillitis treatment'),
+('Mia Watson', 'mia.watson@example.com', 200.00, 'Insurance', 'UnitedHealthcare', 'Mental health session'),
+('Jacob Pierce', 'jacob.pierce@example.com', 270.00, 'Insurance', 'Humana', 'Parkinson’s care'),
+('Julia Benson', 'julia.benson@example.com', 150.00, 'Credit Card', 'Cigna', 'Ovarian cyst procedure'),
+('Grace Patel', 'grace.patel@example.com', 105.00, 'Debit Card', 'Aetna', 'Iron supplements and tests'),
+('Sophie Lane', 'sophie.lane@example.com', 115.00, 'Credit Card', 'Blue Cross', 'Insomnia therapy fee'),
+('Lily Reed', 'lily.reed@example.com', 140.00, 'Insurance', 'UnitedHealthcare', 'PCOS treatment'),
+('Alex Kim', 'alex.kim@example.com', 190.00, 'Credit Card', 'Cigna', 'ADHD therapy billing'),
+('Andrea Evans', 'andrea.evans@example.com', 100.00, 'Debit Card', 'Kaiser Permanente', 'UTI treatment'),
+('James Miller', 'james.miller@example.com', 160.00, 'Insurance', 'Aetna', 'Prostate health treatment'),
+('Sarah Collins', 'sarah.collins@example.com', 130.00, 'Credit Card', 'Blue Cross', 'Thyroid checkup and meds'),
+('John Anderson', 'john.anderson@example.com', 145.00, 'Debit Card', 'Cigna', 'Gout care and prescription'),
+('Leah Foster', 'leah.foster@example.com', 110.00, 'Cash', 'Humana', 'Skin allergy medications'),
+('Amy Scott', 'amy.scott@example.com', 95.00, 'Debit Card', 'UnitedHealthcare', 'Mononucleosis care'),
+('Sam Grant', 'sam.grant@example.com', 155.00, 'Credit Card', 'Kaiser Permanente', 'Sciatica treatment session'),
+('Jan Lambert', 'jan.lambert@example.com', 120.00, 'Debit Card', 'Blue Cross', 'Bronchitis care'),
+('Simon Walsh', 'simon.walsh@example.com', 140.00, 'Insurance', 'Cigna', 'Ulcer treatment and test'),
+('Angela Knox', 'angela.knox@example.com', 230.00, 'Insurance', 'Humana', 'Gallbladder surgery payment'),
+('Vanessa Lambert', 'vanessa.lambert@example.com', 125.00, 'Credit Card', 'Aetna', 'Sinusitis consultation'),
+('Ava Wallace', 'ava.wallace@example.com', 135.00, 'Insurance', 'Blue Cross', 'Pneumonia follow-up'),
+('Henry Scott', 'henry.scott@example.com', 210.00, 'Credit Card', 'Kaiser Permanente', 'Liver condition consultation'),
+('Brian Ellis', 'brian.ellis@example.com', 250.00, 'Insurance', 'UnitedHealthcare', 'ACL tear surgery'),
+('Emma Walker', 'emma.walker@example.com', 95.00, 'Debit Card', 'Cigna', 'UTI medication and consult'),
+('Dylan Clark', 'dylan.clark@example.com', 105.00, 'Credit Card', 'Humana', 'Dermatitis treatment');

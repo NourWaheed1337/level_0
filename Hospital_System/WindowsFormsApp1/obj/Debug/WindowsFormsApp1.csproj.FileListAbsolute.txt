@@ -26,3 +26,4 @@ C:\Users\Nourw\Downloads\p4\Hospital_System\WindowsFormsApp1\obj\Debug\WindowsF.
 C:\Users\Nourw\Downloads\p4\Hospital_System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserControl3.resources
 C:\Users\Nourw\Downloads\p4\Hospital_System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserControl4.resources
 C:\Users\Nourw\Downloads\p4\Hospital_System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserControl5.resources
+C:\Users\Nourw\Downloads\p4\Hospital_System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserControl6.resources

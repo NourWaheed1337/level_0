@@ -34,12 +34,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.userControl61 = new WindowsFormsApp1.UserControl6();
             this.userControl51 = new WindowsFormsApp1.UserControl5();
             this.userControl41 = new WindowsFormsApp1.UserControl4();
             this.userControl31 = new WindowsFormsApp1.UserControl3();
@@ -77,7 +77,6 @@
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button5);
@@ -98,7 +97,7 @@
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = global::WindowsFormsApp1.Properties.Resources.power;
-            this.button8.Location = new System.Drawing.Point(30, 660);
+            this.button8.Location = new System.Drawing.Point(30, 585);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(234, 59);
             this.button8.TabIndex = 9;
@@ -115,7 +114,7 @@
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = global::WindowsFormsApp1.Properties.Resources.logout1;
-            this.button7.Location = new System.Drawing.Point(25, 582);
+            this.button7.Location = new System.Drawing.Point(25, 507);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(234, 59);
             this.button7.TabIndex = 8;
@@ -123,22 +122,6 @@
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(231)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::WindowsFormsApp1.Properties.Resources.emergency1;
-            this.button6.Location = new System.Drawing.Point(25, 429);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(234, 59);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "    Rooms";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -197,13 +180,14 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::WindowsFormsApp1.Properties.Resources.wallet;
-            this.button4.Location = new System.Drawing.Point(25, 507);
+            this.button4.Location = new System.Drawing.Point(25, 432);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(234, 59);
             this.button4.TabIndex = 5;
             this.button4.Text = "    Payments";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -221,6 +205,15 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // userControl61
+            // 
+            this.userControl61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.userControl61.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl61.Location = new System.Drawing.Point(329, 0);
+            this.userControl61.Name = "userControl61";
+            this.userControl61.Size = new System.Drawing.Size(1595, 1055);
+            this.userControl61.TabIndex = 12;
             // 
             // userControl51
             // 
@@ -261,6 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.userControl61);
             this.Controls.Add(this.userControl51);
             this.Controls.Add(this.userControl41);
             this.Controls.Add(this.userControl31);
@@ -282,7 +276,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
@@ -292,5 +285,6 @@
         private UserControl3 userControl31;
         private UserControl4 userControl41;
         private UserControl5 userControl51;
+        private UserControl6 userControl61;
     }
 }
