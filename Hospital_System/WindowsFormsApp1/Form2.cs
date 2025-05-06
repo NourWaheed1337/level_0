@@ -12,6 +12,8 @@ namespace WindowsFormsApp1
 {
     public partial class Form2 : Form
     {
+        private List<Operation> operations = new List<Operation>();
+
         public Form2()
         {
             InitializeComponent();

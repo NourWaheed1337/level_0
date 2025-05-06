@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,33 +14,16 @@ namespace WindowsFormsApp1
 {
     public partial class UserControl3 : UserControl
     {
-        private void FetchTableData(string tableName)
-        {
-            string connectionString = "Data Source=.;Initial Catalog=data_patients;Integrated Security=True;";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    string query = $"SELECT * FROM {tableName}";
+        private Doctor[] doctors = new Doctor[100];
+        private int count = 0;
 
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
-                    DataTable dataTable = new DataTable();
-                    dataAdapter.Fill(dataTable);
-                    dataGridView1.DataSource = dataTable;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error fetching table data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
         private void MakeRoundedPanel(Panel panel, int radius)
         {
             Rectangle bounds = panel.ClientRectangle;
             GraphicsPath path = new GraphicsPath();
             int diameter = radius * 2;
+
             path.StartFigure();
             path.AddArc(bounds.X, bounds.Y, diameter, diameter, 180, 90);
             path.AddArc(bounds.Right - diameter, bounds.Y, diameter, diameter, 270, 90);
@@ -49,120 +32,93 @@ namespace WindowsFormsApp1
             path.CloseFigure();
             panel.Region = new Region(path);
         }
-        private void AddDoctor()
+
+        private void LoadDoctorsFromFile()
         {
-            string connectionString = "Data Source=.;Initial Catalog=data_patients;Integrated Security=True;";
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    string query = @"INSERT INTO doctor 
-                             (id, name, email, age, gender, specialization, qualifications, hospital_affiliation, joined_on) 
-                             VALUES 
-                             (@id, @name, @email, @age, @gender, @specialization, @qualifications, @hospital_affiliation, @joined_on)";
+                if (!File.Exists("doctors.txt")) return;
 
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", textBox7.Text);
-                    cmd.Parameters.AddWithValue("@name", textBox8.Text);
-                    cmd.Parameters.AddWithValue("@email", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@age", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@gender", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@specialization", textBox6.Text);
-                    cmd.Parameters.AddWithValue("@qualifications", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@hospital_affiliation", textBox5.Text);
-                    cmd.Parameters.AddWithValue("@joined_on", dateTimePicker1.Value);
+                string[] lines = File.ReadAllLines("doctors.txt");
+                count = 0;
 
-                    int rows = cmd.ExecuteNonQuery();
-                    MessageBox.Show(rows > 0 ? "Doctor added successfully." : "Insert failed.");
-                    FetchTableData("doctor");
-                    ClearFields();
-                }
-                catch (Exception ex)
+                foreach (string line in lines)
                 {
-                    MessageBox.Show("Error adding doctor: " + ex.Message);
+                    try
+                    {
+                        string[] parts = line.Split(',');
+
+                        if (parts.Length == 9)
+                        {
+                            Doctor dr = new Doctor(
+                                int.Parse(parts[0]),
+                                parts[1],
+                                parts[2],
+                                int.Parse(parts[3]),
+                                (Gender_doc)Enum.Parse(typeof(Gender_doc), parts[4]),
+                                parts[5],
+                                parts[6],
+                                parts[7]
+                            );
+
+                            doctors[count++] = dr;
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Skipping invalid line: {line}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error parsing line: {line}\nException: {ex.Message}");
+                    }
                 }
+
+                RefreshDoctorsGrid();
             }
-        }
-        private void DeleteDoctor()
-        {
-            string connectionString = "Data Source=.;Initial Catalog=data_patients;Integrated Security=True;";
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            catch (Exception ex)
             {
-                try
-                {
-                    conn.Open();
-                    string query = "DELETE FROM doctor WHERE id = @id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", textBox8.Text);
-
-                    int rows = cmd.ExecuteNonQuery();
-                    MessageBox.Show(rows > 0 ? "Doctor deleted successfully." : "Delete failed.");
-                    FetchTableData("doctor");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error deleting doctor: " + ex.Message);
-                }
-            }
-        }
-        private void UpdateDoctor()
-        {
-            string connectionString = "Data Source=.;Initial Catalog=data_patients;Integrated Security=True;";
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conn.Open();
-                    string query = @"UPDATE doctor SET 
-                             name = @name, 
-                             email = @email, 
-                             age = @age, 
-                             gender = @gender, 
-                             specialization = @specialization,
-                             qualifications = @qualifications,
-                             hospital_affiliation = @hospital_affiliation,
-                             joined_on = @joined_on
-                             WHERE id = @id";
-
-                    SqlCommand cmd = new SqlCommand(query, conn);
-
-                    cmd.Parameters.AddWithValue("@id", textBox7.Text);                      // Doctor ID
-                    cmd.Parameters.AddWithValue("@name", textBox8.Text);                    // Doctor Name
-                    cmd.Parameters.AddWithValue("@email", textBox2.Text);                   // Email
-                    cmd.Parameters.AddWithValue("@age", textBox1.Text);                     // Age
-                    cmd.Parameters.AddWithValue("@gender", textBox3.Text);                  // Gender
-                    cmd.Parameters.AddWithValue("@specialization", textBox6.Text); 
-                    cmd.Parameters.AddWithValue("@qualifications", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@hospital_affiliation", textBox5.Text);
-                    cmd.Parameters.AddWithValue("@joined_on", dateTimePicker1.Value); 
-
-                    int rows = cmd.ExecuteNonQuery();
-                    MessageBox.Show(rows > 0 ? "Doctor updated successfully." : "Update failed.");
-                    FetchTableData("doctor");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error updating doctor: " + ex.Message);
-                }
+                MessageBox.Show("Error while loading data: " + ex.Message);
             }
         }
 
+        private void RefreshDoctorsGrid()
+        {
+            dataGridViewOperations.DataSource = null;
+            dataGridViewOperations.DataSource = doctors.Take(count).ToList();
+        }
 
         private void ClearFields()
         {
-            throw new NotImplementedException();
+            textBoxDoctorId.Clear();
+            textBoxDoctorName.Clear();
+            textBoxEmail.Clear();
+            textBoxAge.Clear();
+            cmbStatus.SelectedIndex = -1;
+            textBoxSpecialization.Clear();
+            textBoxHospitalAffiliation.Clear();
+            textBoxQualifications.Clear();
         }
 
-        private void ClearFields_2(){
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
-            textBox6.Clear();
-            textBox7.Clear();
-            textBox8.Clear();
+        private void SaveDoctorsToFile()
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter("doctors.txt"))
+                {
+                    for (int i = 0; i < count; i++)
+                    {
+                        Doctor dr = doctors[i];
+                        string line = $"{dr.Id},{dr.Name},{dr.Email},{dr.Age},{dr.Gender}" +
+                                      $"{dr.Specialization},{dr.HospitalAffiliation},{dr.Qualifications}";
+                        writer.WriteLine(line);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error during save: " + ex.Message);
+            }
         }
 
         public UserControl3()
@@ -171,62 +127,112 @@ namespace WindowsFormsApp1
             MakeRoundedPanel(panel1, 10);
             MakeRoundedPanel(panel2, 10);
             MakeRoundedPanel(panel3, 10);
-            FetchTableData("doctor");
+            LoadDoctorsFromFile();
+            cmbStatus.DataSource = Enum.GetValues(typeof(Gender_doc));
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e) { }
+
+        private void panel2_Paint(object sender, PaintEventArgs e) { }
+
+        private void label1_Click(object sender, EventArgs e) { }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+
+        private void panel3_Paint(object sender, PaintEventArgs e) { }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e) { }
+
+        private void textBox7_TextChanged(object sender, EventArgs e) { }
+
+        private void button4_Click(object sender, EventArgs e) // Add
         {
+            try
+            {
+                Doctor dr = new Doctor(
+                    int.Parse(textBoxDoctorId.Text),
+                    textBoxDoctorName.Text,
+                    textBoxEmail.Text,
+                    int.Parse(textBoxAge.Text),
+                    (Gender_doc)Enum.Parse(typeof(Gender_doc), cmbStatus.SelectedItem.ToString()),
+                    textBoxSpecialization.Text,
+                    textBoxHospitalAffiliation.Text,
+                    textBoxQualifications.Text
+                );
 
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            AddDoctor();
+                doctors[count++] = dr;
+                RefreshDoctorsGrid();
+                SaveDoctorsToFile();
+                MessageBox.Show("Doctor added successfully.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DeleteDoctor();
+            if (dataGridViewOperations.SelectedRows.Count > 0)
+            {
+                int rowIndex = dataGridViewOperations.SelectedRows[0].Index;
+                for (int i = rowIndex; i < count - 1; i++)
+                {
+                    doctors[i] = doctors[i + 1];
+                }
+                doctors[count - 1] = null;
+                count--;
+
+                RefreshDoctorsGrid();
+                SaveDoctorsToFile();
+                MessageBox.Show("Doctor deleted successfully.");
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete.");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UpdateDoctor();
+            if (dataGridViewOperations.SelectedRows.Count > 0)
+            {
+                int rowIndex = dataGridViewOperations.SelectedRows[0].Index;
+
+                try
+                {
+                    Doctor updatedDoctor = new Doctor(
+                        int.Parse(textBoxDoctorId.Text),
+                        textBoxDoctorName.Text,
+                        textBoxEmail.Text,
+                        int.Parse(textBoxAge.Text),
+                        (Gender_doc)Enum.Parse(typeof(Gender_doc), cmbStatus.SelectedItem.ToString()),
+                        textBoxSpecialization.Text,
+                        textBoxHospitalAffiliation.Text,
+                        textBoxQualifications.Text
+                    );
+
+                    doctors[rowIndex] = updatedDoctor;
+                    RefreshDoctorsGrid();
+                    SaveDoctorsToFile();
+                    MessageBox.Show("Doctor updated successfully.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to update.");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ClearFields_2();
+            ClearFields();
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e) { }
     }
 }
