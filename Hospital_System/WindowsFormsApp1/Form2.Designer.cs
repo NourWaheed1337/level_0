@@ -167,7 +167,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(234, 59);
             this.button5.TabIndex = 6;
-            this.button5.Text = "    Pations";
+            this.button5.Text = "    Patients";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
